@@ -41,6 +41,12 @@ app.get('/about', (req, res)=> {
         pageTitle: 'About Page',
     });
 });
+app.get('/portfolio', (req, res)=> {
+    res.render('portfolio.hbs', {
+        pageTitle: 'Portfolio',
+        portfolioLink: 'http://github.com/modestroy'
+    });
+});
 
 app.get('/bad', (req, res)=> {
     res.send({
